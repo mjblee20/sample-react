@@ -1,15 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Home from './pages/home.js';
 
 function App() {
   return (
     <Router>
       <Switch>
         <Route exact path='/'>
-          {/* Homepage */}
+          <Home />
         </Route>
-        <Route path='/design'>{/* CSS playground */}</Route>
-        <Route path='/algorithms'>{/*  */}</Route>
+        <Route path='/pages/design'>{/* CSS playground */}</Route>
+        <Route path='/pages/algorithms'>{/*  */}</Route>
+        <Route path='/pages/projects'></Route>
       </Switch>
     </Router>
   );
