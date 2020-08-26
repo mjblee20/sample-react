@@ -1,7 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Home from './pages/home.js';
+import Home from './pages/home';
+import Design from './pages/design';
+import Projects from './pages/projects';
+import Algo from './pages/algorithms';
 
 function App() {
   return (
@@ -10,9 +13,15 @@ function App() {
         <Route path='/sample-react'>
           <Home />
         </Route>
-        <Route path='/pages/design'>{/* CSS playground */}</Route>
-        <Route path='/pages/algorithms'>{/*  */}</Route>
-        <Route path='/pages/projects'></Route>
+        <Route path='/design'>
+          <Design />
+        </Route>
+        <Route path='/algorithms'>
+          <Algo />
+        </Route>
+        <Route path='/projects'>
+          <Projects />
+        </Route>
       </Switch>
     </Router>
   );
