@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path='/'>
+        <Route path='/sample-react'>
           <Home />
         </Route>
         <Route path='/pages/design'>{/* CSS playground */}</Route>
