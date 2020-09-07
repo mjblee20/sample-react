@@ -10,7 +10,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path='/sample-react'>
+        <Route path='/home'>
           <Home />
         </Route>
         <Route path='/design'>
@@ -22,6 +22,7 @@ function App() {
         <Route path='/projects'>
           <Projects />
         </Route>
+        <Redirect to='/home' />
       </Switch>
     </Router>
   );
